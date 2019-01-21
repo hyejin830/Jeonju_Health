@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:background="#32cd32"
+        android:text="하루 만보 걷기"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:id="@+id/stepText"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="#ffffff"
+        android:background="#32cd32"
+        android:text="걷기 START!"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="빠른 메뉴"/>
+
+        <include
+            layout="@layout/activity_home_category"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_youtube"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="홈트레이닝 링크"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="#00ff0000"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+</LinearLayout>
+    <!-- 홈 프래그먼트 연결 페이지 -->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/name"
+            android:textSize="24dp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/addr"
+            android:textSize="16dp"
+            android:textColor="#666666"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/tel"
+            android:textSize="16dp"
+            android:textColor="#666666"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tel_btn"
+            android:background="@drawable/phone_more_small"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

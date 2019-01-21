@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.com.jeonjuhealth">
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="34c22403bd3a4e1a068f906fc8fa372b" />
+        <activity android:name=".LoadingActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name="example.com.listframe.ListMainActivity"></activity>
+        <activity android:name="example.com.api.pharm.PharmViewList"></activity>
+        <activity android:name="example.com.api.park.ParkViewList"></activity>
+        <activity android:name="example.com.api.gym.GymViewList"></activity>
+        <activity android:name="example.com.data.demen_center.DemencenterViewList"></activity>
+        <activity android:name="example.com.data.bicycle_sell.BicycleSellList"></activity>
+        <activity android:name="example.com.api.heartattack.HeartAttackViewList"></activity>
+        <activity android:name="example.com.data.healthup_center.HealthUpViewList"></activity>
+        <activity android:name="example.com.data.bicycle_rental.RentalBicycleViewList"></activity>
+        <activity android:name="example.com.data.medi_machine.MediListMainActivity"></activity>
+        <activity android:name="example.com.data.water.WaterViewList"></activity>
+        <activity android:name="example.com.data.rest_center.RestcenterViewList"></activity>
+        <activity android:name="example.com.api.bicycle_keep.BicycleKeepViewList"></activity>
+        <activity android:name="example.com.etc.BicycleCourseActivity"></activity>
+        <service android:name="example.com.etc.walk_step.StepCheckService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="app.manbo.Service"/>
+            </intent-filter>
+
+        </service>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+</manifest>
